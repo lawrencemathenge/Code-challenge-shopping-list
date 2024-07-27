@@ -1,0 +1,75 @@
+body {
+    font-family: "Inter Tight", sans-serif;
+    background-color: #cad2c5;
+    user-select: none;
+  }
+  .container {
+    width: 50%; /* or any width you prefer */
+    margin: 0 auto;
+  }
+  h1 {
+    user-select: none;
+    color: #c1121f;
+    font-weight: 700;
+  }
+  .green {
+    color: #2f3e46;
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+  li {
+    margin: 10px;
+    font-size: 26px;
+    user-select: none;
+    text-align: center;
+    color: #283618;
+    font-weight: 600;
+  }
+  .delete-btn {
+    border: 3px solid #2f3e46;
+    font-size: 16px;
+    border-radius: 16px;
+    padding: 6px 9px;
+    background-color: #c1121f;
+    color: #cad2c5;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  #input-element,
+  #add-item,
+  #clear-btn {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  #add-item,
+  #clear-btn {
+    background-color: #2f3e46;
+    color: #cad2c5;
+    font-weight: 600;
+  }
+  #input-element {
+    border: 3px solid #c1121f;
+    background-color: #cad2c5;
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+  ::placeholder {
+    color: #2f3e46;
+    font-weight: 600;
+  }
+  *:focus {
+    outline: none;
+  }
+  #clear-btn {
+    background-color: #c1121f;
+  }
