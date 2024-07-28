@@ -1,19 +1,19 @@
 body {
-    font-family: "Inter Tight", sans-serif;
-    background-color: #cad2c5;
+    font-family:'Times New Roman', Times, serif, sans-serif;
+    background-color: hsl(97, 13%, 80%);
     user-select: none;
   }
   .container {
-    width: 50%; /* or any width you prefer */
+    width: 50%; 
     margin: 0 auto;
   }
   h1 {
     user-select: none;
-    color: #c1121f;
+    color: #12c16f;
     font-weight: 700;
   }
   .green {
-    color: #2f3e46;
+    color: #462f3d;
   }
   ul {
     display: flex;
@@ -38,7 +38,7 @@ body {
     border-radius: 16px;
     padding: 6px 9px;
     background-color: #c1121f;
-    color: #cad2c5;
+    color: #cac5d2;
     cursor: pointer;
     font-weight: 600;
   }
@@ -58,7 +58,7 @@ body {
     font-weight: 600;
   }
   #input-element {
-    border: 3px solid #c1121f;
+    border: 3px solid #4612c1;
     background-color: #cad2c5;
     margin-bottom: 10px;
     margin-right: 5px;
@@ -71,5 +71,5 @@ body {
     outline: none;
   }
   #clear-btn {
-    background-color: #c1121f;
+    background-color: #3a060a;
   }

@@ -1,19 +1,13 @@
 const inputElement = document.querySelector("#input-element");
 const listContainer = document.querySelector("#list-container");
 let listArray = [];
-let listFromStorage = JSON.parse(localStorage.getItem("tasks"));
-if (listFromStorage) {
-  listArray = listFromStorage;
-  renderItems();
-}
 
-function addTask() {
+function addItem() {
   if (inputElement.value === "") {
-    alert("Please enter task first");
+    alert("Please enter item first");
   } else {
     listArray.push(inputElement.value);
     inputElement.value = "";
-    localStorage.setItem("tasks", JSON.stringify(listArray));
     renderItems();
   }
 }
@@ -33,17 +27,15 @@ function renderItems() {
 function deleteItem(event) {
   let index = event.target.getAttribute("data-index");
   listArray.splice(index, 1);
-  localStorage.setItem("tasks", JSON.stringify(listArray));
   renderItems();
 }
 
 function clearAll() {
   listArray = [];
-  localStorage.removeItem("tasks");
   renderItems();
 }
 
 const clearButton = document.querySelector("#clear-btn");
 clearButton.addEventListener("click", clearAll);
 const addButton = document.querySelector("#add-item");
-addButton.addEventListener("click", addTask);
+addButton.addEventListener("click", addItem);
